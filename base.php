@@ -15,8 +15,10 @@
   <div id="wrap" class="container" role="document">
     <div id="content" class="row">
       <div id="main" class="<?php echo roots_main_class(); ?>" role="main">
-        <?php include roots_template_path(); ?>
-      </div>
+        <div id="main-inner">
+          <?php include roots_template_path(); ?>
+        </div><!-- /#main-inner -->
+      </div><!-- /#main -->
       <?php if (roots_display_sidebar()) : ?>
       <aside id="sidebar" class="<?php echo roots_sidebar_class(); ?>" role="complementary">
         <?php get_template_part('templates/sidebar'); ?>

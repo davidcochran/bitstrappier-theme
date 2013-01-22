@@ -1,0 +1,105 @@
+/*!
+ * BitStrappier 0.9.2
+ *
+ * Main LESS file for BitStrappier
+ *
+ * Designed to import desired Bootstrap components
+ *
+ * INCLUDES RESPONSIVE Styles (Bootstrap and Custom)
+ *
+ * by David Cochran
+ * http://aLittleCode.com
+ *
+ * Credits:
+ * - Bootstrap -- http://getbootstrap.com/
+ * - Fontawesome -- http://fortawesome.github.com/Font-Awesome/
+ *
+ */
+
+//
+// File and folder naming rationale
+//
+// _filename = custom LESS files
+// bootstrap/ = current release of Twitter Bootstrap
+// bootstrap_2-2-1/ = Bootstrap 2.2.1 release (in case a former version's code may work best)
+// fontawesome/ = custom web font and icon font styles
+//
+
+// Reset
+@import "bootstrap/reset.less";
+
+// Variables and Mixins
+@import "_variables.less"; // custom variables
+// @import "bootstrap/variables.less"; // If you'd prefer Bootstrap's base variables
+@import "bootstrap/mixins.less"; // Bootstrap's mixins
+@import "_mixins.less"; // for custom mixins
+
+// Grid system and page structure
+@import "bootstrap/scaffolding.less";
+@import "bootstrap/grid.less";
+@import "bootstrap/layouts.less";
+
+@import "_layout-tweaks.less"; // layout tweaks
+
+// Base CSS
+@import "bootstrap/type.less";
+@import "bootstrap/code.less";
+@import "bootstrap/forms.less";
+@import "bootstrap/tables.less";
+
+// Components: common
+
+// @import "sprites.less"; // commented out in favor of Icon Fonts
+
+@import "fontawesome/font-awesome.less"; // Font Awesome icon font
+
+@import "bootstrap/dropdowns.less";
+
+@import "_dropdown-tweaks.less"; // BitStrappier customization
+
+@import "bootstrap/wells.less";
+@import "bootstrap/component-animations.less";
+@import "bootstrap/close.less";
+
+// Components: Buttons & Alerts
+@import "bootstrap/buttons.less";
+@import "bootstrap/button-groups.less";
+@import "bootstrap/alerts.less"; // Note: alerts share common CSS with buttons and thus have styles in buttons.less
+
+// Components: Nav
+@import "bootstrap/navs.less";
+@import "bootstrap/navbar.less";
+@import "bootstrap/breadcrumbs.less";
+@import "bootstrap/pagination.less";
+@import "bootstrap/pager.less";
+
+// Components: Popovers
+@import "bootstrap/modals.less";
+@import "bootstrap/tooltip.less";
+@import "bootstrap/popovers.less";
+
+// Components: Misc
+@import "bootstrap/thumbnails.less";
+@import "bootstrap/media.less";
+@import "bootstrap/labels-badges.less";
+@import "bootstrap/progress-bars.less";
+@import "bootstrap/accordion.less";
+@import "bootstrap/carousel.less";
+@import "bootstrap/hero-unit.less";
+
+// WordPress-Specific Styles
+// ------------------
+@import "_wp.less";
+
+// Additional Styles Specific to this App
+// ------------------
+@import "_app.less";
+
+
+// Utility classes
+@import "bootstrap/utilities.less"; // Has to be last to override when necessary
+
+
+// Responsive Styles
+// -------------------
+@import "_responsive.less";
