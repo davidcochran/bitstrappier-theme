@@ -16,3 +16,9 @@ require_once locate_template('/lib/htaccess.php');        // Rewrites for assets
 require_once locate_template('/lib/widgets.php');         // Sidebars and widgets
 require_once locate_template('/lib/scripts.php');         // Scripts and stylesheets
 require_once locate_template('/lib/custom.php');          // Custom functions
+
+// To check and compile LESS in PHP!
+// NOTE: Plugins utilizing lessphp could call
+// for another instance of lessc, creating a conflict
+// Comment out to turn this functionality off in the theme
+require_once locate_template( '/lib/less.php' );					// Less Compiling functions
