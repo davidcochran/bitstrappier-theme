@@ -1,28 +1,27 @@
 /*!
- * BitStrappier 0.9.2
+ * Built with the BitStrappier Theme 1.0
+ * https://github.com/davidcochran/bitstrappier-theme
  *
- * Main LESS file for BitStrappier
- *
- * Designed to import desired Bootstrap components
- *
- * INCLUDES RESPONSIVE Styles (Bootstrap and Custom)
- *
- * by David Cochran
+ * Copyright (c) 2013 David Cochran
  * http://aLittleCode.com
  *
  * Credits:
+ * - The Roots Theme -- https://github.com/retlehs/roots/
  * - Bootstrap -- http://getbootstrap.com/
  * - Fontawesome -- http://fortawesome.github.com/Font-Awesome/
- *
  */
 
 //
-// File and folder naming rationale
+// BitStrappier LESS File and folder naming rationale
+// -----------------------------------------------------
 //
-// _filename = custom LESS files
-// bootstrap/ = current release of Twitter Bootstrap
-// bootstrap_2-2-1/ = Bootstrap 2.2.1 release (in case a former version's code may work best)
-// fontawesome/ = custom web font and icon font styles
+// less/bootstrap/ = current release of Twitter Bootstrap
+// less/bootstrap_2-2-1/ = Bootstrap 2.2.1 release (in case a former version's code may work best)
+// less/fontawesome/ = Font Awesome's less files
+// and so on and similar as needed!
+//
+// Meanwhile, in the main less folder ...
+// less/_filename.less = Custom LESS files rolling and ready for your further customization!
 //
 
 // Reset
@@ -49,13 +48,12 @@
 
 // Components: common
 
-// @import "sprites.less"; // commented out in favor of Icon Fonts
-
+// @import "sprites.less"; // left out in favor of Font Awesome
 @import "fontawesome/font-awesome.less"; // Font Awesome icon font
 
 @import "bootstrap/dropdowns.less";
 
-@import "_dropdown-tweaks.less"; // BitStrappier customization
+@import "_dropdown-tweaks.less"; // BitStrappier navbar dropdown customizations
 
 @import "bootstrap/wells.less";
 @import "bootstrap/component-animations.less";
@@ -87,11 +85,9 @@
 @import "bootstrap/carousel.less";
 @import "bootstrap/hero-unit.less";
 
-// WordPress-Specific Styles
-// ------------------
-@import "_wp.less";
 
-// Additional Styles Specific to this App
+// Global Styles Specific to this App
+//  - Media queried styles are set up under _responsive.less
 // ------------------
 @import "_app.less";
 
