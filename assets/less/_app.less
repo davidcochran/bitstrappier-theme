@@ -1,3 +1,4 @@
+//
 // Custom to BitStrappier
 //
 // Global Styles Specific to this App
@@ -11,9 +12,13 @@
 //
 
 
-/* ==========================================================================
-   Base
-   ========================================================================== */
+// --------------------------
+// HTML and Body
+// --------------------------
+
+html {
+
+}
 
 body {
 
@@ -29,19 +34,15 @@ body.admin-bar .navbar-fixed-top {
 	top: 28px;
 }
 
-/* =============================================================================
-   Site Header, Banner, and Nav
-   ========================================================================== */
+// --------------------------
+// Site Header, Banner, and Nav
+// --------------------------
 
 #banner {
 
 }
 
-// The dropdown menu (ul)
-// -- just a few essential lines for customizing colors and borders
-// ----------------------
-
-.navbar .dropdown-menu {
+.navbar .dropdown-menu { // customizing colors and borders - see bootstrap/dropdowns.less
   padding: 5px 0;
   margin: 0 0 0 -8px;
   list-style: none;
@@ -59,71 +60,71 @@ body.admin-bar .navbar-fixed-top {
           background-clip: padding-box;
 }
 
-
-/* ==========================================================================
-   Pages, Posts, and Sidebars
-   ========================================================================== */
+// --------------------------
+// Pages and Posts Content
+// --------------------------
 
 #content { // Includes page, post, and sidebar content
 
-	#main { // the content of full-width pages
-					// and the main column in pages with sidebars
+}
 
-		#main-inner { // this div adds white space in BitStrappier
-			@media (min-width: 768px) {
-				margin-right: 24px;
-			}
+#main { // the content of full-width pages
+				// and the large main column in pages with sidebars
 
-			p { // normal p's -- p.byline is specified below
-				font-size: 16px;
-				line-height: 1.6;
-				margin: 24px 0;
-			}
+}
 
-			.hentry {
-				header { // contains heading, time, and byline
-					margin-bottom: 20px;
+#main-inner { // this div adds white space in BitStrappier
+	@media (min-width: 768px) { // only when window is above 768px
+		margin-right: 24px;
+	}
+}
 
-					time, // date posted
-					p.byline { // author's name
-						font-size: 12px;
-						line-height: 1.2;
-						color: #676767;
-						margin: 0;
-						padding: 0;
-					}
-				}
-				.entry-content { // main article content
+#main p { // normal p's -- p.byline is specified below
+	font-size: 16px;
+	line-height: 1.6;
+	margin: 24px 0;
+}
 
-				}
-				footer { // article footer info
+// Post Contents
+// article.hentry
 
-				}
-			} // /.hentry
+.hentry {
+	header { // contains heading, time, and byline
+		margin-bottom: 20px;
 
-		} // /#main-inner
+		time, // date posted
+		p.byline { // author's name
+			font-size: 12px;
+			line-height: 1.2;
+			color: #676767;
+			margin: 0;
+			padding: 0;
+		}
+	}
+	.entry-content { // main article content
 
-	} // /#main
-
-	#sidebar {
+	}
+	footer { // .hentry article tags and info
 
 	}
 
-} // /#content
+} // /.hentry
 
 
-/* ==========================================================================
-   Site Footer
-   ========================================================================== */
+// The Sidebar
+// --------------------------
+#sidebar {
 
+}
+
+// The Site Footer
+// --------------------------
 #content-info {
 
 }
 
-/* ==========================================================================
-   WordPress Generated Classes
-   See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
-   ========================================================================== */
+// WordPress Generated Classes
+// See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
 
 .aligncenter { display: block; margin: 20px auto; }
 .alignleft { float: left; margin: 20px 20px 20px 0;}
