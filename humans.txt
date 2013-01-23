@@ -1,0 +1,21 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    David Cochran -- aLittleCode.com -- @davidcochran
+
+# CREDITS
+
+    The Roots Theme development community -- https://github.com/retlehs/roots
+
+    Aristeides Stathopoulos and his Shoestrap Theme -- https://github.com/aristath/shoestrap
+
+    The Bootstrap development community -- https://github.com/twitter/bootstrap
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    HTML5 Boilerplate, Normalize.css, jQuery, Modernizr
+    LESS CSS, lessphp
+    Bootstrap

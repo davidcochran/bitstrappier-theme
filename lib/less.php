@@ -1,8 +1,8 @@
 <?php
 
 /*
- * Innovating on Shoestrap's lib/less.php
- *
+ * See less php documentation
+ * http://leafo.net/lessphp/docs/
  */
 function bitstrappier_phpless( $inputFile, $outputFile ) {
 
@@ -11,8 +11,12 @@ function bitstrappier_phpless( $inputFile, $outputFile ) {
   }
   $less = new lessc;
 
+  // For now lessphp runs all the time,
+  // as long as its included in functions.php
+  // We could set up a condition to check.
   // if ( get_option( 'bitstrappier_minimize_css' ) == 1 ) {
     $less->setFormatter( "compressed" );
+    // $less->setPreserveComments(true); // uncomment this line to preserve comments
   // }
 
   // create a new cache object, and compile
@@ -37,6 +41,8 @@ function bitstrappier_phpless_compile() {
   $main_less         = locate_template( 'assets/less/main.less' );
   $main_css          = locate_template( 'assets/css/main.css' );
 
+// Right now everything is compiled to main.css.
+// If need an additional stylesheet, uncomment and customize lines you see below.
   // $responsive_less  = locate_template( 'assets/css/responsive.less' );
   // $responsive_css   = locate_template( 'assets/css/responsive.css' );
 
